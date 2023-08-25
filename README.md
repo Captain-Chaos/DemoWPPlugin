@@ -2,6 +2,17 @@
 
 This is a skeleton project to illustrate how to create plugins for WorldPainter.
 
+## Possibilities
+
+The plugin mechanism of WorldPainter currently allows you to provide:
+
+* New singular, unconfigurable layer types
+* New custom layer types, of which the user can create multiple and configure each differently
+* New tools for the Tools panel, that are applied to a location or area of the map using mouse or tablet
+  * In future, it will also be possible to provide global tools which are not localised and are not applied using mouse or tablet
+* New custom object file formats for use with Custom Object layers
+* New map formats, to be able to Export to or Import from other file formats than Minecraft Java Edition
+
 ## Usage
 
 To use this project, copy it to a new project and take the following steps:
