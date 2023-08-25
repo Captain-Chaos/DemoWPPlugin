@@ -15,6 +15,10 @@ To use this project, copy it to a new project and take the following steps:
 mvn test -P testWithWorldPainter
 ```
 
+## Notes
+
+**Note** that these classes are empty skeletons that don't actually _do_ anything. They are here only to illustrate the required structure of the code.
+
 ## Distribution
 
 You can run your plugin locally for testing and debugging using the above instructions, but other WorldPainter installations won't load unsigned plugins. You will need to arrange for your plugin to be built and signed by the author of WorldPainter before you can distribute it, following these prerequisites and actions:
