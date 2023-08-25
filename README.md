@@ -6,7 +6,7 @@ This is a skeleton project to illustrate how to create plugins for WorldPainter.
 
 To use this project, copy it to a new project and take the following steps:
 
-1. Install the non-public dependencies WorldPainter dependencies in your local Maven repositories following [these](https://github.com/Captain-Chaos/WorldPainter/blob/master/BUILDING.md#installing-dependencies) instructions.
+1. Install the non-public WorldPainter dependencies in your local Maven repositories following [these](https://github.com/Captain-Chaos/WorldPainter/blob/master/BUILDING.md#installing-dependencies) instructions.
 1. Read all the comments, both Javadoc and regular.
 1. Rename the package and class names as appropriate for your organisation and the plugin you want to create. Be careful also to update the configuration files that refer to them.
 1. Delete the classes and methods you don't need. There are examples of all types of plugins, most of which you won't need to create one particular plugin.
