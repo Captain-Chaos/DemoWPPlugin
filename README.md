@@ -22,7 +22,7 @@ You can run your plugin locally for testing and debugging using the above instru
 1. The project needs to be a straightforward Maven or Gradle project that can be built without additional or manual steps.
 1. All dependencies need to be accessible to WorldPainter's private build server. They can be in a private repository, as long as access can be arranged with a private key or token.
 1. The same applies to the source code. It needs to be accessible for inspection and for building by WorldPainter's private build server. It does not have to be public, as long as access can be arranged with a private key or token.
-1. Contact the author of WorldPainter in order to set up the build and signing process. The process can be set up to be automatic whenever new commits are made and the binary can be delivered where you choose, e.g via email or a remote storage service.
+1. Contact the author of WorldPainter in order to set up the build and signing process. The process can be set up to be automatic whenever new commits are made and the binary can be delivered where you choose, e.g via email or an online storage service.
    1. On [Reddit](https://www.reddit.com/user/CaptainChaos74)
    1. On [Discord](https://discordapp.com/users/475648103312261131)
    1. Via [email](mailto:plugin-dev@pepsoft.org)
