@@ -1,4 +1,4 @@
-# WorldPlugin Demo Plugin
+# WorldPainter Demo Plugin
 
 This is a skeleton project to illustrate how to create plugins for WorldPainter.
 
