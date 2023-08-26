@@ -3,6 +3,7 @@ package org.demo.wpplugin;
 import org.demo.wpplugin.layers.DemoCustomLayer;
 import org.demo.wpplugin.layers.DemoLayer;
 import org.demo.wpplugin.layers.editors.DemoCustomLayerEditor;
+import org.demo.wpplugin.operations.DemoGlobalOperation;
 import org.demo.wpplugin.operations.DemoOperation;
 import org.pepsoft.worldpainter.Platform;
 import org.pepsoft.worldpainter.layers.CustomLayer;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 
+import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 import static org.demo.wpplugin.Version.VERSION;
 
@@ -106,5 +108,5 @@ public class DemoWPPlugin extends AbstractPlugin implements
 
     private static final List<Layer> LAYERS = singletonList(DemoLayer.INSTANCE);
     private static final List<Class<? extends CustomLayer>> CUSTOM_LAYERS = singletonList(DemoCustomLayer.class);
-    private static final List<Operation> OPERATIONS = singletonList(new DemoOperation());
+    private static final List<Operation> OPERATIONS = asList(new DemoOperation(), new DemoGlobalOperation());
 }

@@ -98,5 +98,5 @@ public class DemoOperation extends MouseOrTabletOperation implements
     /**
      * Human-readable description of the operation. This is used e.g. in the tooltip of the operation selection button.
      */
-    static final String DESCRIPTION = "A demonstration of creating a custom operation plugin for WorldPainter";
+    static final String DESCRIPTION = "A demonstration of creating a custom operation for WorldPainter";
 }
