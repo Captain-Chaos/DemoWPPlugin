@@ -9,14 +9,24 @@ import org.pepsoft.worldpainter.painting.Paint;
  * by clicking or dragging with a mouse or pressing down on a tablet, it makes sense to subclass
  * {@link MouseOrTabletOperation}, which automatically sets that up for you.
  *
- * <p>For other kinds of operations you are free to subclass {@link AbstractOperation} instead, or even just implement
- * {@link Operation} directly.
+ * <p>For more general kinds of operations you are free to subclass {@link AbstractOperation} instead, or even just
+ * implement {@link Operation} directly.
+ *
+ * <p>There are also more specific base classes you can use:
+ *
+ * <ul>
+ *     <li>{@link AbstractBrushOperation} - for operations that need access to the currently selected brush and
+ *     intensity setting.
+ *     <li>{@link RadiusOperation} - for operations that perform an action in the shape of the brush.
+ *     <li>{@link AbstractPaintOperation} - for operations that apply the currently selected paint in the shape of the
+ *     brush.
+ * </ul>
  *
  * <p><strong>Note</strong> that for now WorldPainter only supports operations that
  */
 public class DemoOperation extends MouseOrTabletOperation implements
-        PaintOperation,
-        BrushOperation
+        PaintOperation, // Implement this if you need access to the currently selected paint; note that some base classes already provide this
+        BrushOperation // Implement this if you need access to the currently selected brush; note that some base classes already provide this
 {
     public DemoOperation() {
         // Using this constructor will create a "single shot" operation. The tick() method below will only be invoked
