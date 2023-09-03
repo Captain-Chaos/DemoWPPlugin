@@ -71,7 +71,7 @@ public class DemoWPPlugin extends AbstractPlugin implements
         if (layerType == DemoCustomLayer.class) {
             return (LayerEditor<L>) new DemoCustomLayerEditor(platform);
         } else {
-            throw new IllegalArgumentException("Layer type " + layerType + " not supported");
+            return null;
         }
     }
 
