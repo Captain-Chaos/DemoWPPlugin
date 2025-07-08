@@ -2,6 +2,7 @@ package org.demo.wpplugin.layers;
 
 import org.pepsoft.worldpainter.layers.Layer;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import static org.pepsoft.worldpainter.layers.Layer.DataSize.NIBBLE;
@@ -21,7 +22,7 @@ public class DemoLayer extends Layer {
      * change if the layer changes in a non backwards compatible way, but not between versions of the plugin if it is
      * still backwards compatible.
      */
-    static final String ID = "org.demo.wpplugin.DemoLayer.v1";
+    static final String ID = "org.demo.wpplugin.DemoLayer.v2";
 
     /**
      * Human-readable short name of the plugin.
@@ -81,5 +82,6 @@ public class DemoLayer extends Layer {
      * This class is serialised in the .world file when it is saved, so it must be stable. It is recommended to give it
      * a fixed {@code serialVersionUID} and ensure that any changes are backwards compatible.
      */
+    @Serial
     private static final long serialVersionUID = 1L;
 }

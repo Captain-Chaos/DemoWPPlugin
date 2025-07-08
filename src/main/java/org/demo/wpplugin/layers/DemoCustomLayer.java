@@ -9,6 +9,7 @@ import org.pepsoft.worldpainter.layers.Layer;
 import org.pepsoft.worldpainter.layers.exporters.ExporterSettings;
 
 import java.awt.*;
+import java.io.Serial;
 
 import static org.pepsoft.worldpainter.layers.Layer.DataSize.NIBBLE;
 
@@ -79,5 +80,6 @@ public class DemoCustomLayer extends CustomLayer {
      * This class is serialised in the .world file when it is saved, so it must be stable. It is recommended to give it
      * a fixed {@code serialVersionUID} and ensure that any changes are backwards compatible.
      */
+    @Serial
     private static final long serialVersionUID = 1L;
 }

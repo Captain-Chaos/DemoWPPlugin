@@ -15,9 +15,7 @@ import org.pepsoft.worldpainter.painting.Paint;
  * <p>There are also more specific base classes you can use:
  *
  * <ul>
- *     <li>{@link AbstractBrushOperation} - for operations that need access to the currently selected brush and
- *     intensity setting.
- *     <li>{@link RadiusOperation} - for operations that perform an action in the shape of the brush.
+ *     <li>{@link AbstractBrushOperation} - for operations that perform an action in the shape of the brush.
  *     <li>{@link AbstractPaintOperation} - for operations that apply the currently selected paint in the shape of the
  *     brush.
  * </ul>
@@ -79,6 +77,20 @@ public class DemoOperation extends MouseOrTabletOperation implements
     @Override
     public void setBrush(Brush brush) {
         this.brush = brush;
+        brush.setRadius(radius);
+    }
+
+    @Override
+    public int getRadius() {
+        return radius;
+    }
+
+    @Override
+    public void setRadius(int radius) {
+        this.radius = radius;
+        if (brush != null) {
+            brush.setRadius(radius);
+        }
     }
 
     @Override
@@ -93,6 +105,7 @@ public class DemoOperation extends MouseOrTabletOperation implements
 
     private Brush brush;
     private Paint paint;
+    private int radius;
 
     /**
      * The globally unique ID of the operation. It's up to you what to use here. It is not visible to the user. It can
